@@ -1,0 +1,34 @@
+﻿@model NBAMvcWeb.Models.Player.Details
+
+<h1>Are you sure you want to delete this NBA player?</h1>
+
+<form asp-action="Delete">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="FirstName">@Model.FirstName</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">@Model.LastName</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="Age">@Model.Age</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="Height">@Model.Height</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="Weight">@Model.Weight</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="Team">@Model.Team.Name</label>
+    </div>
+    <input type="submit" value="Delete" class="btn btn-danger" style="color:#fff; width: 100%" />
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="FirstName" />
+    <input type="hidden" asp-for="LastName" />
+    <input type="hidden" asp-for="Age" />
+    <input type="hidden" asp-for="Height" />
+    <input type="hidden" asp-for="Weight" />
+    <input type="hidden" asp-for="Team" />
+</form>

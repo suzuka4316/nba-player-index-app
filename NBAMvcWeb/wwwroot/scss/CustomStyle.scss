@@ -1,0 +1,59 @@
+﻿/* navigation bar */
+.navbar {
+    background-image: url('../images/pexels-steve-johnson-1570779-resize.jpg');
+    background-size: cover;
+    min-height: 10vh;
+
+    .container > a {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        li {
+            a {
+                color: white !important;
+                font-size: 1rem;
+            }
+
+            a:hover {
+                color: darkred !important;
+            }
+        }
+    }
+}
+
+/* read, update, delete buttons */
+.rud-btns > a {
+    width: 70px;
+}
+
+/* h1 */
+.h1, h1 {
+    font-size: 2rem !important;
+}
+
+
+/* form validation */
+.form-control {
+    width: 97.5% !important;
+    display: inline-block;
+}
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+.field-validation-valid {
+    display: none;
+}
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.validation-summary-valid {
+    display: none;
+}
+
